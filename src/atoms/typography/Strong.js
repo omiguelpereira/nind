@@ -1,32 +1,32 @@
 import React from "react";
 
-export default function Strong2Xl(props){
-   if(props.size === "sm"){
+export default function Strong(props) {
+    let styles = ""
+    switch (props.size) {
+        case "sm":
+            styles += " text-sm"
+            break
+        case "md":
+            styles += " text-md"
+            break
+        case "lg":
+            styles += " text-lg"
+            break
+        case "xl":
+            styles += " text-xl"
+            break
+        case "2xl":
+            styles += " text-2xl"
+            break
+        default:
+            styles += " text-md"
+            break
+    }
+
     return(
-        <p className={`flex flex-row gap-1 text-md leading-5 font-medium ${props.tail}`}>
+        <p className={`flex flex-row gap-1 leading-5 font-medium ${props.tail}`}>
             {props.children}
         </p>
     )
-   }
-   else if(props.size === "lg"){
-    return(
-        <p className={`flex flex-row gap-1 text-xl leading-5 font-medium ${props.tail}`}>
-            {props.children}
-        </p>
-    )
-   }
-   else if(props.size === "xl"){
-    return(
-        <p className={`flex flex-row gap-1 text-2xl leading-5 font-medium ${props.tail}`}>
-            {props.children}
-        </p>
-    )
-   }
-   else if(props.size === "2xl"){
-    return(
-        <p className={`flex flex-row gap-1 text-3xl leading-5 font-medium ${props.tail}`}>
-            {props.children}
-        </p>
-    )
-   }
 }
+
