@@ -5,13 +5,13 @@ export default function Container(props){
     if(!props.width) styles += " max-w-min  "
     switch (props.type){
         case "outline":
-            styles += " rounded-md border border-gray-200"
+            styles += " rounded-md border border-gray-200 "
             break;
-        case "disable":
-            styles += " rounded-md bg-gray-100";
+        case "gray":
+            styles += " rounded-md bg-gray-100 ";
             break;
         default:
-            styles += " rounded-lg shadow"
+            styles += " rounded-lg shadow "
             break;
     }
     return(
