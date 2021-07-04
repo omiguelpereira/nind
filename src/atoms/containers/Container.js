@@ -15,7 +15,7 @@ export default function Container(props){
             break;
     }
     return(
-        <div className={`p-4 ${props.tail} ${styles}`}
+        <div className={`${props.tail} ${styles}`}
             style={{width:props.width, height:props.height}}>
             {props.children}
         </div>
