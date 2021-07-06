@@ -1,4 +1,4 @@
-const defaultStyles = {
+export const defaultStyles = {
     button:{
         color:"gray",
         size : "md",
