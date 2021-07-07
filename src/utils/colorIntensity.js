@@ -9,7 +9,7 @@ export function ColorIntensity(intensityValue = 5, contrastLevel ){
 
     if(intensityValue === 0) intensityValue = 50
 
-    while(intensityValue-contrastLevel < 50) contrastLevel-100
+    while(intensityValue-contrastLevel < 50) contrastLevel-10
 
     let colors = {
         primary: intensityValue,
