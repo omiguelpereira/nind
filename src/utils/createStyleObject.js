@@ -1,9 +1,16 @@
 import { defaultStyles } from "./defaultStyles"
+import { ColorIntensity } from "./colorIntensity"
+import colorContrast from "./colorContrast"
 
 export default function createStyleObject(params,type){
+
+    const colors = ColorIntensity(params.colorIntensity, colorContrast(contrastLevel))
+
     let style = {}
     
-    style.color = params.color ? params.color : defaultStyles[type].color
+    style.colors.color = params.color ? params.color : defaultStyles[type].colors.color
+    style.colors.primary = colors.primary
+    style.colors.secundary = colors.secundary
     style.size = params.size ? params.size : defaultStyles[type].size
     style.outline = params.outline ? params.outline : defaultStyles[type].outline
     style.bodyless = params.bodyless ? params.bodyless : defaultStyles[type].bodyless
