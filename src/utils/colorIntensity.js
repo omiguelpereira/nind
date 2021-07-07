@@ -1,4 +1,4 @@
-export function ColorIntensity(intensityValue = 5, contrastLevel ){
+export function ColorIntensity(intensityValue = 5, contrastLevel = 400 ){
 
     for(let i = 0; i < 9; i++){
         if(intensityValue === i){
@@ -16,5 +16,5 @@ export function ColorIntensity(intensityValue = 5, contrastLevel ){
         secundary: intensityValue-contrastLevel,
     }
 
-    return intensityValue
+    return colors
 }
