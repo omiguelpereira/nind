@@ -1,6 +1,10 @@
 export const defaultStyles = {
     button:{
-        color:"gray",
+        colors:{
+            color: "green",
+            primary: 500,
+            secundary: 100,
+        },
         size : "md",
         outline : true,
         bodyless : false,
