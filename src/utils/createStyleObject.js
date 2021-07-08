@@ -4,10 +4,11 @@ import colorContrast from "./colorContrast"
 
 export default function createStyleObject(params,type){
 
-    const colors = ColorIntensity(params.colorIntensity, colorContrast(contrastLevel))
+    const contrast = colorContrast(params.contrastLevel)
+    const colors = ColorIntensity(params.colorIntensity, contrast)
 
     let style = {}
-    
+    style.colors = {}
     style.colors.color = params.color ? params.color : defaultStyles[type].colors.color
     style.colors.primary = colors.primary
     style.colors.secundary = colors.secundary
