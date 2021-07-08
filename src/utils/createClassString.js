@@ -1,4 +1,4 @@
-export function createClassString (styles) {
+export default function createClassString (styles) {
     const alternativeStyles = {}
     
     alternativeStyles.outline = `text-${styles.colors.color}-${styles.colors.primary} border border-${styles.colors.color}-${styles.colors.primary}`
