@@ -9,7 +9,7 @@ export default function createStyleObject(params,type){
 
     let style = {}
     style.colors = {}
-    style.colors.color = params.color ? params.color : defaultStyles[type].colors.colorver  
+    style.colors.color = params.color ? params.color : defaultStyles[type].colors.color
     style.colors.primary = colors.primary
     style.colors.secundary = colors.secundary
     style.size = params.size ? params.size : defaultStyles[type].size
