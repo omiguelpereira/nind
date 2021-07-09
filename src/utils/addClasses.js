@@ -11,8 +11,9 @@ export default function addClasses(props,type){
     const result = propertiesVerifier(customClasses,avaibleParams)
     console.warn(result)
     const ClassesString = createClassString(customClasses)
-    if(!props.type) props.type = "default"
-    const styles = ClassesString[props.type]
+    let componentType = props.type ? props.type : "default"
+
+    const styles = ClassesString[componentType]
 
     return styles
 
