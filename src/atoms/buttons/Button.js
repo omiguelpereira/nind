@@ -1,25 +1,11 @@
 import React from "react";
 import PropTypes, { func } from "prop-types";
 import Strong from '../typography/Strong'
+import addClasses from "../../utils/addClasses";
 
 export default function Button(props){
 
-    let styles = ""
-    function addNewStyles(){
-        switch (props.color){
-            case "red":
-                styles += " bg-red-600  text-white shadow"
-                break;
-            case "green":
-                styles +=  " bg-green-500  text-white shadow"
-                break;
-            default:
-                styles += "  text-gray-700 border border-gray-300"
-                break;
-        }
-    }
-
-    addNewStyles()
+    const styles = addClasses(props, "button")
 
     return(
         <button onClick={() => props.click()}

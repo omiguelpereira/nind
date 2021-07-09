@@ -1,27 +1,9 @@
 import React from 'react'
+import addClasses from '../../utils/addClasses'
 
 export default function Bar(props) {
 
-    let styles = ""
-
-    function addNewStyles(){
-        switch (props.color) {
-            case "red":
-                styles += " bg-red-50";
-                break
-            case "green":
-                styles += " bg-green-50";
-                break
-            case "yellow":
-                styles += " bg-yellow-50";
-                break
-            default:
-                styles += " bg-gray-50";
-                break
-        }
-    }
-
-    addNewStyles()
+    const styles = addClasses(props, "Bar") 
 
     return (
         <header className={`w-full p-3 flex items-center  ${styles} ${props.tail}`}>

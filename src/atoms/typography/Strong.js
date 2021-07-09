@@ -1,35 +1,11 @@
 import React from "react";
-
-export default function Strong(props) {
-    let styles = ""
+import addClasses from "../../utils/addClasses";
+export default function Strong(props) {  
     
-    function addNewStyles(){
-        switch (props.size) {
-            case "sm":
-                styles += " text-sm"
-                break
-            case "md":
-                styles += " text-md"
-                break
-            case "lg":
-                styles += " text-lg"
-                break
-            case "xl":
-                styles += " text-xl"
-                break
-            case "2xl":
-                styles += " text-2xl"
-                break
-            default:
-                styles += " text-md"
-                break
-        }
-    }
-
-    addNewStyles()
+    const styles = addClasses(props,"strong")
 
     return(
-        <p className={`flex flex-row gap-1 leading-5 font-medium ${props.tail}`}>
+        <p className={`flex flex-row gap-1 leading-5 font-medium ${props.tail} ${styles}`}>
             {props.children}
         </p>
     )
