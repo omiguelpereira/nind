@@ -30,5 +30,13 @@ export const defaultStyles = {
         outline : false,
         bodyless : false,
         dualtone: false,
+    },
+    strong:{
+        colors:{
+            color: "gray",
+            primary: "900",
+            secundary: "500",
+        },
+        size: "md",
     }
 }
