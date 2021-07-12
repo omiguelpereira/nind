@@ -1,35 +1,47 @@
 export const defaultStyles = {
     button:{
         colors:{
-            color: "green",
+            color: "gray",
             primary: 500,
-            secundary: 100,
+            secundary: 200,
         },
         size : "md",
-        outline : true,
-        bodyless : false,
-        dualtone: false,
+        type:{
+            outline : true,
+            bodyless : false,
+            dualtone: false,
+        }
     },
     badge:{
         color:"green",
         size : "xm",
-        outline : true,
-        bodyless : false,
-        dualtone: true,
+        type:{
+            outline : true,
+            bodyless : false,
+            dualtone: true,
+        }
     },
     container:{
-        color:"white",
+        colors:{
+            color: "gray",
+            primary: "200",
+            secundary: "100",
+        },
         size : "xm",
-        outline : true,
-        bodyless : false,
-        dualtone: false,
+        type:{
+            outline : true,
+            bodyless : false,
+            dualtone: false,
+        },
     },
     bar:{
         color:"gray",
         size : "xm",
-        outline : false,
-        bodyless : false,
-        dualtone: false,
+        type:{
+            outline : false,
+            bodyless : false,
+            dualtone: false,
+        }
     },
     strong:{
         colors:{
@@ -38,5 +50,23 @@ export const defaultStyles = {
             secundary: "500",
         },
         size: "md",
+        type:{
+            outline : false,
+            bodyless : false,
+            dualtone: false,
+        },
+    },
+    IconBadge:{
+        colors:{
+            color: "green",
+            primary: "500",
+            secundary: "100",
+        },
+        size: "xl",
+        type:{
+            outline : false,
+            bodyless : false,
+            dualtone: false,
+        },
     }
 }
