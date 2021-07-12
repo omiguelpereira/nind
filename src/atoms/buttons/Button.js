@@ -5,7 +5,8 @@ import addClasses from "../../utils/addClasses";
 
 export default function Button(props){
 
-    const styles = addClasses(props, "button")
+    let styles = addClasses(props, "button")
+    if(!props.width) styles += " max-w-min  "
 
     return(
         <button onClick={() => props.click()}
