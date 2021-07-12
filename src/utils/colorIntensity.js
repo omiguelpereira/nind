@@ -1,6 +1,6 @@
 export default function ColorIntensity(intensityValue = 5, contrastLevel = 400 ){
 
-    for(let i = 0; i < 9; i++){
+    for(let i = 0; i < 10; i++){
         if(intensityValue === i){
             intensityValue = i*100
             break
