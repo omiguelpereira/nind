@@ -1,8 +1,8 @@
 import { avaibleParams } from "../constants/avaibleParams";
 import { defaultStyles } from "../constants/defaultStyles";
 import { propertiesVerifier } from "./verifierFunctions";
-import createStyleObject from "./createStyleObject";
-import createClassString from "./createClassString";
+import createStyleObject from "../factories/createStyleObject";
+import createClassString from "../factories/createClassString";
 
 export default function addClasses(props,type){
 
