@@ -1,6 +1,6 @@
 import { defaultStyles } from "../constants/defaultStyles"
-import ColorIntensity from "./colorIntensity"
-import colorContrast from "./colorContrast"
+import ColorIntensity from "../utils/colorIntensity"
+import colorContrast from "../utils/colorContrast"
 
 export default function createStyleObject(params,type){
 
