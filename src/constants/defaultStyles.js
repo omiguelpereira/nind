@@ -6,20 +6,12 @@ export const defaultStyles = {
             secundary: 200,
         },
         size : "md",
-        type:{
-            outline : true,
-            bodyless : false,
-            dualtone: false,
-        }
+        type: "outline"
     },
     badge:{
         color:"green",
         size : "xm",
-        type:{
-            outline : true,
-            bodyless : false,
-            dualtone: true,
-        }
+        type:"dualtone"
     },
     container:{
         colors:{
@@ -28,20 +20,12 @@ export const defaultStyles = {
             secundary: "100",
         },
         size : "xm",
-        type:{
-            outline : true,
-            bodyless : false,
-            dualtone: false,
-        },
+        type: "outline"
     },
     bar:{
         color:"gray",
         size : "xm",
-        type:{
-            outline : false,
-            bodyless : false,
-            dualtone: false,
-        }
+        type:"default"
     },
     strong:{
         colors:{
@@ -50,11 +34,7 @@ export const defaultStyles = {
             secundary: "500",
         },
         size: "md",
-        type:{
-            outline : false,
-            bodyless : false,
-            dualtone: false,
-        },
+        type:"default"
     },
     IconBadge:{
         colors:{
@@ -63,10 +43,6 @@ export const defaultStyles = {
             secundary: "100",
         },
         size: "xl",
-        type:{
-            outline : false,
-            bodyless : false,
-            dualtone: false,
-        },
+        type: "default"
     }
 }

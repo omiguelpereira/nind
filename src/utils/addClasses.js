@@ -12,17 +12,7 @@ export default function addClasses(props,type){
     console.warn(result)
     const ClassesString = createClassString(customClasses)
 
-    var keys = Object.keys(defaultStyles[type].type);
-
-    var filtered = keys.filter(function(key) {
-        return defaultStyles[type].type[key]
-    });
-
-    console.warn(filtered)
-
-    let componentType = props.type ? props.type : filtered
-
-    const styles = ClassesString[componentType]
+    const styles = ClassesString
 
     return styles
 

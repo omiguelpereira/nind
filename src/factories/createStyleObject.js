@@ -13,9 +13,7 @@ export default function createStyleObject(params,type){
     style.colors.primary = colors.primary ? colors.primary : defaultStyles[type].colors.primary
     style.colors.secundary = colors.secundary ? colors.secundary : defaultStyles[type].colors.secundary
     style.size = params.size ? params.size : defaultStyles[type].size
-    style.outline = params.outline ? params.outline : defaultStyles[type].outline
-    style.bodyless = params.bodyless ? params.bodyless : defaultStyles[type].bodyless
-    style.dualtone = params.dualtone ? params.dualtone : defaultStyles[type].dualtone
+    style.type = params.type ? params.type : defaultStyles[type].type
     
     return style
 }
