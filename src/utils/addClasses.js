@@ -7,9 +7,7 @@ import createClassString from "../factories/createClassString";
 export default function addClasses(props,componentName){
 
     const customClasses = createStyleObject(props, componentName)
-    console.log(customClasses)
-    const result = propertiesVerifier(customClasses,avaibleParams)
-    console.warn(result)
+
     const ClassesString = createClassString(customClasses)
 
     const styles = ClassesString
