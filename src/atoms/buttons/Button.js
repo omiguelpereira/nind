@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes, { func } from "prop-types";
-import Strong from '../typography/Strong'
+import Label from '../typography/Label'
 import addClasses from "../../utils/addClasses";
 
 export default function Button(props){
@@ -12,9 +12,9 @@ export default function Button(props){
         <button onClick={() => props.click()}
             className={` rounded-md flex justify-center items-center px-5 py-3 ${props.tail} ${styles} `}
             style={{width:props.width,height:props.height}}>
-              <Strong type="bodyless" color="white" size={props.size}>
+              <Label type="bodyless" color="white" size={props.size}>
                 {props.children}
-              </Strong>
+              </Label>
         </button>
     )
   
