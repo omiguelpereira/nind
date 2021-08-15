@@ -4,9 +4,9 @@ import { propertiesVerifier } from "./verifierFunctions";
 import createStyleObject from "../factories/createStyleObject";
 import createClassString from "../factories/createClassString";
 
-export default function addClasses(props,type){
+export default function addClasses(props,componentName){
 
-    const customClasses = createStyleObject(props, type)
+    const customClasses = createStyleObject(props, componentName)
     console.log(customClasses)
     const result = propertiesVerifier(customClasses,avaibleParams)
     console.warn(result)

@@ -27,14 +27,20 @@ export const defaultStyles = {
         size : "xm",
         type:"default"
     },
-    strong:{
+    label:{
         colors:{
             color: "gray",
             primary: "900",
             secundary: "500",
         },
-        size: "md",
-        type:"default"
+        type: "typographic",
+        font: {
+            size: "md",
+            weight: "normal",
+            spacing: "normal",
+        },
+        fill:"bodyless",
+        weight: 400,
     },
     IconBadge:{
         colors:{
@@ -46,3 +52,4 @@ export const defaultStyles = {
         type: "default"
     }
 }
+

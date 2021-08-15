@@ -7,5 +7,8 @@ export default function createClassString (styles) {
     alternativeStyles.dualtone = `text-${styles.colors.color}-${styles.colors.primary} bg-${styles.colors.color}-${styles.colors.secundary} ${styles.size ? `text-${styles.size}` : ""}`
     alternativeStyles.default = `text-white bg-${styles.colors.color}-${styles.colors.primary} ${styles.size ? `text-${styles.size}` : ""}`
 
-    return alternativeStyles[styles.type]
+    if(styles.type === "typographic") return alternativeStyles[styles.fill].concat(` text-${styles.font.size} font-${styles.colors.weight} tracking-${styles.colors.spacing} `)
+
+    return alternativeStyles[styles.fill]
+
 }
