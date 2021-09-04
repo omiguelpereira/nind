@@ -1,17 +1,21 @@
 export const defaultStyles = {
     button:{
         colors:{
-            color: "gray",
+            color: "green",
             primary: 500,
             secundary: 200,
         },
         size : "md",
-        type: "outline"
+        fill: "default"
     },
     badge:{
-        color:"green",
+        colors:{
+            color: "green",
+            primary: 500,
+            secundary: 200,
+        },
         size : "xm",
-        type:"dualtone"
+        fill:"dualtone"
     },
     container:{
         colors:{
@@ -23,9 +27,13 @@ export const defaultStyles = {
         type: "outline"
     },
     bar:{
-        color:"gray",
-        size : "xm",
-        type:"default"
+        colors:{
+            color: "gray",
+            primary: 50,
+            secundary: 100,
+        },
+        size : "md",
+        fill: "default"
     },
     label:{
         colors:{
@@ -49,7 +57,7 @@ export const defaultStyles = {
             secundary: "100",
         },
         size: "xl",
-        type: "default"
+        fill: "default"
     }
 }
 
