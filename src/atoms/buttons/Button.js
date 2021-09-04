@@ -10,7 +10,7 @@ export default function Button(props){
 
     return(
         <button onClick={() => props.click()}
-            className={` rounded-md flex justify-center items-center px-5 py-3 ${props.tail} ${styles} `}
+            className={` rounded-md flex justify-center items-center px-4 py-3 ${props.tail} ${styles} `}
             style={{width:props.width,height:props.height}}>
               <Label type="bodyless" color="white" size={props.size}>
                 {props.children}
