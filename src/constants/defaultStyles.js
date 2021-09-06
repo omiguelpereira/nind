@@ -1,46 +1,46 @@
 export const defaultStyles = {
     button:{
-        colors:{
-            color: "green",
-            primary: 500,
-            secundary: 200,
-        },
+        color:"green",
+        colorIntensity: {
+            strongTone: 500,
+            weakerTone: 200,
+          },
         size : "md",
         fill: "default"
     },
     badge:{
-        colors:{
-            color: "green",
-            primary: 500,
-            secundary: 200,
-        },
+        color:"green",
+        colorIntensity: {
+            strongTone: 500,
+            weakerTone: 200,
+          },
         size : "xm",
         fill:"dualtone"
     },
     container:{
-        colors:{
-            color: "gray",
-            primary: "200",
-            secundary: "100",
-        },
+        color:"gray",
+        colorIntensity: {
+            strongTone: 200,
+            weakerTone: 100,
+          },
         size : "xm",
-        type: "outline"
+        fill: "borderless"
     },
     bar:{
-        colors:{
-            color: "gray",
-            primary: 50,
-            secundary: 100,
-        },
+        color:"gray",
+        colorIntensity: {
+            strongTone: 50,
+            weakerTone: 100,
+          },
         size : "md",
         fill: "default"
     },
     label:{
-        colors:{
-            color: "gray",
-            primary: "900",
-            secundary: "500",
-        },
+        color:"gray",
+        colorIntensity: {
+            strongTone: 900,
+            weakerTone: 500,
+          },
         type: "typographic",
         font: {
             size: "md",
@@ -48,16 +48,33 @@ export const defaultStyles = {
             spacing: "normal",
         },
         fill:"bodyless",
-        weight: 400,
     },
     IconBadge:{
-        colors:{
+        color:{
             color: "green",
             primary: "500",
             secundary: "100",
         },
         size: "xl",
         fill: "default"
+    },
+    header:{
+        color:"gray",
+        colorIntensity: {
+            strongTone: 900,
+            weakerTone: 500,
+          },
+        size: "md",
+        fill: "bodyless"
+    },
+    sidebar:{
+        color:"gray",
+        colorIntensity: {
+            strongTone: 900,
+            weakerTone: 500,
+          },
+        size: "md",
+        fill: "bodyless"
     }
 }
 
