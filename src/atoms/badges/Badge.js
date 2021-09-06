@@ -12,7 +12,7 @@ export default function Button(props){
         <label
             className={`truncate rounded-full flex justify-center items-center px-3 py-1 ${props.tail} ${styles} `}
             style={{width:props.width,height:props.height}}>
-            <Label type="bodyless" color={props.color} size={props.size}>
+            <Label type="bodyless" color={props.color ? props.color : "white"} size={props.size}>
                 {props.text}
             </Label>
         </label>
