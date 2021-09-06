@@ -1,14 +1,16 @@
-export function isaValidParam(text,avaibleParams){
-    return (avaibleParams.indexOf(text) > -1)
+export function isaValidParam(text, avaibleParams) {
+    if(avaibleParams && text)
+        return avaibleParams.indexOf(text) > -1 ? true : false  
 }
 
-export function propertiesVerifier(properties, avaibleParams){
-    for(let key in avaibleParams){
-        if(!isaValidParam(properties[key],avaibleParams[key])){
-            return {
-                message: `${properties[key]} is a invalid param`
-            }
-        }
+export function propertiesSanitizer(properties, defaultParams, alternativeParams) {
+    for (let key in properties) {
+        if (typeof properties[key] === 'object')
+            propertiesSanitizer(properties[key], defaultParams, alternativeParams)
+        else if (!isaValidParam(properties[key], defaultParams[key]) && isaValidParam(properties[key], Object.keys(alternativeParams)))
+            properties[key] = alternativeProperties[properties[key]]
+        else if (!isaValidParam(properties[key], defaultParams[key]))
+            console.log(`${properties[key]} is a invalid param.`)
     }
-    return {message: "No invalid param found"}
+    return properties
 }
